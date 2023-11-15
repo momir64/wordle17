@@ -43,7 +43,7 @@ h1 {
 }
 
 .table {
-    flex-grow: 1;
+    height: calc(100dvh - 62px - 64px * 3 - 28px);
     display: flex;
 }
 
@@ -66,7 +66,6 @@ td {
 .keyboard {
     margin: auto;
     margin-top: 15px;
-    margin-bottom: 5px;
     display: flex;
     flex-direction: column;
     width: min(500px, 98vw);
