@@ -2,6 +2,7 @@ html,
 body {
     background-color: #121213;
     margin: 0;
+    height: 100%;
 }
 
 .header {
@@ -37,10 +38,11 @@ h1 {
 .flexbox {
     display: flex;
     flex-direction: column;
+    height: 100%;
 }
 
 .table {
-    height: calc(100vh - 62px - 64px * 3 - 28px);
+    height: calc(100% - 62px - 64px * 3 - 28px);
     display: flex;
 }
 
@@ -65,7 +67,7 @@ td {
     margin-top: 15px;
     display: flex;
     flex-direction: column;
-    width: min(500px, 100vw);
+    width: min(500px, 98vw);
 }
 
 .row {
