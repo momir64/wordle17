@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>Wordle - Reč Dana</title>
+    <script src="script.js"></script>
     <link rel="stylesheet" href="style.css" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" href="/favicon.ico" />
@@ -43,46 +44,46 @@
         <table>
           <tbody>
             <tr>
-              <td>A</td>
-              <td>V</td>
-              <td>I</td>
-              <td>O</td>
-              <td>N</td>
+              <td id="00"></td>
+              <td id="01"></td>
+              <td id="02"></td>
+              <td id="03"></td>
+              <td id="04"></td>
             </tr>
             <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
+              <td id="10"></td>
+              <td id="11"></td>
+              <td id="12"></td>
+              <td id="13"></td>
+              <td id="14"></td>
             </tr>
             <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
+              <td id="20"></td>
+              <td id="21"></td>
+              <td id="22"></td>
+              <td id="23"></td>
+              <td id="24"></td>
             </tr>
             <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
+              <td id="30"></td>
+              <td id="31"></td>
+              <td id="32"></td>
+              <td id="33"></td>
+              <td id="34"></td>
             </tr>
             <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
+              <td id="40"></td>
+              <td id="41"></td>
+              <td id="42"></td>
+              <td id="43"></td>
+              <td id="44"></td>
             </tr>
             <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
+              <td id="50"></td>
+              <td id="51"></td>
+              <td id="52"></td>
+              <td id="53"></td>
+              <td id="54"></td>
             </tr>
           </tbody>
         </table>
@@ -90,30 +91,30 @@
 
       <div class="keyboard">
         <div class="row">
-          <button>Ž</button>
-          <button>Š</button>
-          <button>E</button>
-          <button>R</button>
-          <button>T</button>
-          <button>Ć</button>
-          <button>U</button>
-          <button>I</button>
-          <button>O</button>
-          <button>P</button>
-          <button>Dž</button>
-          <button>Đ</button>
+          <button onclick="key_press('Ž')">Ž</button>
+          <button onclick="key_press('Š')">Š</button>
+          <button onclick="key_press('E')">E</button>
+          <button onclick="key_press('R')">R</button>
+          <button onclick="key_press('T')">T</button>
+          <button onclick="key_press('Ć')">Ć</button>
+          <button onclick="key_press('U')">U</button>
+          <button onclick="key_press('I')">I</button>
+          <button onclick="key_press('O')">O</button>
+          <button onclick="key_press('P')">P</button>
+          <button onclick="key_press('Dž')">Dž</button>
+          <button onclick="key_press('Đ')">Đ</button>
         </div>
         <div class="row">
-          <button>A</button>
-          <button>S</button>
-          <button>D</button>
-          <button>F</button>
-          <button>G</button>
-          <button>H</button>
-          <button>J</button>
-          <button>K</button>
-          <button>L</button>
-          <button>Lj</button>
+          <button onclick="key_press('A')">A</button>
+          <button onclick="key_press('S')">S</button>
+          <button onclick="key_press('D')">D</button>
+          <button onclick="key_press('F')">F</button>
+          <button onclick="key_press('G')">G</button>
+          <button onclick="key_press('H')">H</button>
+          <button onclick="key_press('J')">J</button>
+          <button onclick="key_press('K')">K</button>
+          <button onclick="key_press('L')">L</button>
+          <button onclick="key_press('Lj')">Lj</button>
         </div>
         <div class="row">
           <button class="wide_btn">
@@ -131,15 +132,15 @@
               <path d="M20 4v7a4 4 0 0 1-4 4H4"></path>
             </svg>
           </button>
-          <button>Z</button>
-          <button>Č</button>
-          <button>C</button>
-          <button>V</button>
-          <button>B</button>
-          <button>N</button>
-          <button>Nj</button>
-          <button>M</button>
-          <button class="wide_btn">
+          <button onclick="key_press('Z')">Z</button>
+          <button onclick="key_press('Č')">Č</button>
+          <button onclick="key_press('C')">C</button>
+          <button onclick="key_press('V')">V</button>
+          <button onclick="key_press('B')">B</button>
+          <button onclick="key_press('N')">N</button>
+          <button onclick="key_press('Nj')">Nj</button>
+          <button onclick="key_press('M')">M</button>
+          <button onclick="key_delete()" class="wide_btn">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
