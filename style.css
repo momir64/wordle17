@@ -44,8 +44,8 @@ h1 {
 
 .table {
     display: flex;
-    height: calc(100vh - 62px - 64px * 3 - 28px);
-    height: calc(100dvh - 62px - 64px * 3 - 28px);
+    height: calc(100vh - 62px - 64px * 3 - 20px);
+    height: calc(100dvh - 62px - 64px * 3 - 20px);
 }
 
 table {
