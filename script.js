@@ -78,7 +78,7 @@ function key_enter() {
 
     row++;
     col = 0;
-    setTimeout((row) => { if (row == 5 && input != solution) shift_up(); }, 1800, row);
+    setTimeout((row) => { if (row == 5 && input != solution) shift_up(); }, 1900, row);
   } catch (e) {
     document.getElementById(row.toString()).classList.add("jiggle");
     setTimeout(() => { document.getElementById(row.toString()).classList.remove("jiggle"); }, 500);
@@ -118,8 +118,8 @@ function shift_up() {
       setTimeout((i, j) => {
         document.getElementById(i.toString() + j).classList.remove('colapse');
         document.getElementById(i.toString() + j).classList.add('expand');
-        setTimeout((i, j) => { document.getElementById(i.toString() + j).classList.remove("expand"); }, 500, i, j);
-      }, 500, i, j);
+        setTimeout((i, j) => { document.getElementById(i.toString() + j).classList.remove("expand"); }, 700, i, j);
+      }, 700, i, j);
     }
   }
 
