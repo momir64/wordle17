@@ -4,6 +4,9 @@ body {
     padding: 0;
     margin: 0;
     height: 100%;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .header {
@@ -54,8 +57,8 @@ table {
 }
 
 td {
-    width: 55px;
-    height: 55px;
+    width: 56px;
+    height: 56px;
     border: 2px solid #666;
     color: #d7dadc;
     text-align: center;
@@ -69,13 +72,13 @@ td {
     margin-top: 15px;
     display: flex;
     flex-direction: column;
-    width: min(500px, 98vw);
+    width: min(490px, 98vw);
 }
 
 .row {
     display: flex;
     width: 100%;
-    margin-bottom: 6px;
+    margin-bottom: 8px;
 }
 
 button {
@@ -92,8 +95,120 @@ button {
     padding: auto;
     line-height: 0;
     cursor: pointer;
+    outline: none;
 }
 
 .wide_btn {
     flex-shrink: 0.95;
+}
+
+.pulse {
+    animation-name: pulse;
+    animation-duration: 0.13s;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.jiggle {
+    animation-name: jiggle;
+    animation-duration: 0.23s;
+    animation-iteration-count: 2;
+    animation-timing-function: ease-out;
+}
+
+@keyframes jiggle {
+    0% {
+        transform: translate(0px, 0);
+    }
+    25% {
+        transform: translate(13px, 0);
+    }
+    75% {
+        transform: translate(-13px, 0);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+.green {
+    animation-name: green;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes green {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        background-color: #121213;
+        transform: scale(1, 0);
+    }
+    100% {
+        background-color: rgb(83, 141, 78);
+        transform: scale(1);
+    }
+}
+
+.yellow {
+    animation-name: yellow;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes yellow {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        background-color: #121213;
+        transform: scale(1, 0);
+    }
+    100% {
+        background-color: rgb(181, 159, 59);
+        transform: scale(1);
+    }
+}
+
+.gray {
+    animation-name: gray;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes gray {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        background-color: #121213;
+        transform: scale(1, 0);
+    }
+    100% {
+        background-color: rgb(58, 58, 60);
+        transform: scale(1);
+    }
+}
+
+.kgreen {
+    background-color: rgb(83, 141, 78);
+}
+
+.kyellow {
+    background-color: rgb(181, 159, 59);
+}
+
+.kgray {
+    background-color: #3a3a3c;
 }
