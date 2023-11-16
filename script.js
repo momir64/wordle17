@@ -92,8 +92,8 @@ function finish() {
   document.getElementById(row.toString() + 2).innerHTML = 'E';
   document.getElementById(row.toString() + 3).innerHTML = '♡';
   document.getElementById(row.toString() + 4).innerHTML = '';
-  document.getElementById(row.toString() + 3).style.lineHeight = "0.5rem";
-  document.getElementById(row.toString() + 3).style.fontSize = "2.5rem";
+  document.getElementById(row.toString() + 3).style.lineHeight = "1rem";
+  document.getElementById(row.toString() + 3).style.fontSize = "2rem";
   for (i = 0; i < 5; i++) {
     document.getElementById(row.toString() + i).classList.add("invisible");
     setTimeout((i, row) => { document.getElementById(row.toString() + i).classList.add("fgreen"); }, (i + 1) * 220 + 666, i, row);
