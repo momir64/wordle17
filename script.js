@@ -96,7 +96,7 @@ function finish() {
   document.getElementById(row.toString() + 3).style.fontSize = "2rem";
   for (i = 0; i < 5; i++) {
     document.getElementById(row.toString() + i).classList.add("invisible");
-    setTimeout((i, row) => { document.getElementById(row.toString() + i).classList.add("fgreen"); }, (i + 1) * 220 + 400, i, row);
+    setTimeout((i, row) => { document.getElementById(row.toString() + i).classList.add("fgreen"); }, (i + 1) * 220 + 500, i, row);
   }
 }
 
