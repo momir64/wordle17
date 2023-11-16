@@ -162,6 +162,35 @@ button {
     }
 }
 
+.invisible {
+    color: rgba(0, 0, 0, 0);
+}
+
+.fgreen {
+    animation-name: fgreen;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fgreen {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        background-color: #121213;
+        color: rgba(0, 0, 0, 0);
+        transform: scale(1, 0);
+    }
+    51% {
+        color: rgba(215, 218, 220, 1);
+    }
+    100% {
+        background-color: rgb(83, 141, 78);
+        color: rgba(215, 218, 220, 1);
+        transform: scale(1);
+    }
+}
+
 .yellow {
     animation-name: yellow;
     animation-duration: 0.5s;
@@ -198,6 +227,35 @@ button {
     }
     100% {
         background-color: rgb(58, 58, 60);
+        transform: scale(1);
+    }
+}
+
+.colapse {
+    animation-name: colapse;
+    animation-duration: 0.25s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes colapse {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1, 0);
+    }
+}
+
+.expand {
+    animation-name: expand;
+    animation-duration: 0.25s;
+}
+
+@keyframes expand {
+    0% {
+        transform: scale(1, 0);
+    }
+    100% {
         transform: scale(1);
     }
 }
