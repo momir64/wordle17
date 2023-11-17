@@ -68,10 +68,13 @@ function key_enter() {
         }
         if (b <= a) {
           setTimeout((i, row) => { document.getElementById(row.toString() + i).classList.add("yellow"); }, i * 220, i, row);
-          document.getElementById(input[i].toUpperCase()).classList.add("kyellow");
+          if (!document.getElementById(input[i].toUpperCase()).classList.contains("kgreen"))  
+            document.getElementById(input[i].toUpperCase()).classList.add("kyellow");
         } else {
           setTimeout((i, row) => { document.getElementById(row.toString() + i).classList.add("gray"); }, i * 220, i, row);
-          document.getElementById(input[i].toUpperCase()).classList.add("kgray");
+          if (!document.getElementById(input[i].toUpperCase()).classList.contains("kgreen") && 
+              !document.getElementById(input[i].toUpperCase()).classList.contains("kyellow"))
+            document.getElementById(input[i].toUpperCase()).classList.add("kgray");
         }
       }
     }
